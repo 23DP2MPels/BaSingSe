@@ -26,5 +26,5 @@ model Profile {
   avatar String?  
   isVerified Boolean @default(false)
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt()
 }
